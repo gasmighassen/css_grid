@@ -99,6 +99,10 @@ body {
   font-size: 10px;
   font-family: "Cabin", sans-serif;
 }
+.btn:hover {
+  background-color: #f3f3f3;
+  color: #111111;
+}
 .food-drinks {
   background-color: #61c436;
   color: #f3f3f3;
