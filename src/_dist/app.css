@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cabin/v26/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkV2EL7E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cabin/v26/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkW-EL7E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cabin/v26/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkYODL7E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cabin/v26/u-4X0qWljRw-PfU81xCKCpdpbgZJl6XFpfEd7eA9BIxxkbqDL7E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
+}
+.df-jcc-aic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.df-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.df-jcsa-aic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.df-jcse-aic {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.df-jcfs-aic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.df-jcfe-aic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn {
+  padding: 7px 11px 6px;
+  border-radius: 20px;
+  border: none;
+  font-size: 10px;
+  font-family: "Cabin", sans-serif;
+}
+.food-drinks {
+  background-color: #61c436;
+  color: #f3f3f3;
+}
+.life-style {
+  background-color: #009cff;
+  color: #f3f3f3;
+}
+.travel {
+  background-color: #d60000;
+  color: #f3f3f3;
+}
+.entertaiment {
+  background-color: #a66bbe;
+  color: #f3f3f3;
+}
+.technology {
+  background-color: #f99500;
+  color: #f3f3f3;
+}
