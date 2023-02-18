@@ -5,176 +5,143 @@ import {
   PlayCircleFilled,
 } from "@ant-design/icons";
 import "../_dist/main.css";
+import CardBg from "./cards/CardBg";
+import CardBig from "./cards/CardBig";
 
 function Main() {
+  const bigCard = [
+    {
+      url: "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_38-385x300.jpg",
+      buttonType: "entertaiment",
+      icon: <PlayCircleFilled />,
+      header: "Are rock concerts really coming back into fashion?",
+      text: "Monotonectally pursue backward-compatible ideas without empowered imperatives. Interactively predominate low-risk high-yield ROI...",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_3_1473333938-24x24.jpg",
+      userName: "Patricia Callahan",
+      views: "38,690",
+    },
+    {
+      url: "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_13-335x300.jpg",
+      buttonType: "food-drinks",
+      icon: <CameraOutlined />,
+      header: "With good typography you don’t actually need images",
+      text: "Distinctively coordinate pandemic technologies rather than market-driven...",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_5_1473333966-24x24.jpg",
+      userName: "Joana Bergstein",
+      views: "12,964",
+    },
+  ];
+
+  const bgCard = [
+    {
+      bgImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_24-370x300.jpg",
+      buttonType: "technology",
+      header: "The world needs true geniuses now more than ever",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_3_1473333938-24x24.jpg",
+      userName: "Patricia Callahan",
+    },
+    {
+      bgImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_28-270x300.jpg",
+      buttonType: "entertaiment",
+      header: "Cards look so good with a splash of color on the categories",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_4_1473333956-24x24.jpg",
+      userName: "Lisa Scholfield",
+    },
+  ];
+  const CardNoBg = [
+    {
+      buttonType: ["technology", "travel"],
+      header: "Does a blog post look better with a featured image?",
+      text: "Authoritatively pontificate synergistic total linkage and pandemic metrics. Assertively...",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_3_1473333938-24x24.jpg",
+      userName: "Patricia Callahan",
+    },
+    {
+      buttonType: ["travel"],
+      header: "Cards look so good with a splash of color on the categories",
+      text: "Authoritatively pontificate synergistic total linkage and pandemic metrics. Assertively...",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_4_1473333956-24x24.jpg",
+      userName: "Lisa Scholfield",
+    },
+    {
+      buttonType: ["food & drinks"],
+      header: "Cards look so good with a splash of color on the categories",
+      text: "Authoritatively pontificate synergistic total linkage and pandemic metrics. Assertively...",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_4_1473333956-24x24.jpg",
+      userName: "Lisa Scholfield",
+    },
+  ];
+  const cardHalfBg = [
+    {
+      imgBg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_01-370x150.jpg",
+      buttonType: "life style",
+      header: "If you’re truly happy and you know it let it show",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_5_1473333966-24x24.jpg",
+      userName: "Joana Bergstein",
+    },
+    {
+      imgBg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_23-370x150.jpg",
+      buttonType: "travel",
+      header: "Australia is the ultimate place in the world for...",
+      userImg:
+        "https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_4_1473333956-24x24.jpg",
+      userName: "Lisa Scholfield",
+    },
+  ];
+
   return (
     <div className="main-content">
       <div className="title-1">
         <h1>Editor’s pick</h1>
       </div>
-      <div className="card-1 big">
-        <div className="img-wrap-card">
-          <img
-            src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_38-385x300.jpg"
-            alt=""
-          />
-        </div>
-        <div className="card-content">
-          <div className="card-upper">
-            <PlayCircleFilled />
-            <button className="btn entertaiment">entertaiment</button>
-          </div>
-
-          <h2 className="card-title">
-            <a href="">Are rock concerts really coming back into fashion?</a>
-          </h2>
-
-          <p>
-            Monotonectally pursue backward-compatible ideas without empowered
-            imperatives. Interactively predominate low-risk high-yield ROI
-            rather than adaptive e-tailers....
-          </p>
-
-          <div className="card-lower">
-            <div className="profile-img">
-              <img
-                src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_3_1473333938-24x24.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className="views">
-              {" "}
-              <p>Patricia Callahan</p>
-              <EyeOutlined />
-              <span>38,689 views</span>
-            </div>
-          </div>
-        </div>
+      <div className="card-1">
+        <CardBig info={bigCard[0]} />
       </div>
       <div className="card-2">
-        <div>
-          <button className="btn technology">technology</button>
-          <h1>The world needs true geniuses now more than ever</h1>
-        </div>
-        <div className="card-lower">
-          <div className="profile-img">
-            <img
-              src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_3_1473333938-24x24.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="views">
-            <p>Patricia Callahan</p>
-          </div>
-        </div>
+        <CardBg info={bgCard[0]} />
       </div>
-      <div className="card-3 no-bg">
-        <div className="upper">
-          <button className="btn technology">technology</button>
-          <h2 className="card-title">
-            <a href="">Does a blog post look better with a featured image?</a>
-          </h2>
-          <p className="para">
-            Authoritatively pontificate synergistic total linkage and pandemic
-            metrics. Assertively initiate interactive architectures with
-            end-to-end meta-services. Conveniently build...
-          </p>
-        </div>
-        <div className="card-lower">
-          <div className="profile-img">
-            <img
-              src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_3_1473333938-24x24.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="views">
-            <p>Patricia Callahan</p>
-          </div>
-        </div>
+      <div className="card-3">
+        {" "}
+        <CardBg info={bgCard[1]} />
       </div>
       <div className="card-4">
-        <div className="img-up">
-          <button className="btn travel">travel</button>
-          <img
-            src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_01-370x150.jpg"
-            alt=""
-          />
-        </div>
-        <div className="down-section">
-          <h2 className="card-title">
-            <a href="">Does a blog post look better with a featured image?</a>
-          </h2>
-          <div className="card-lower">
-            <div className="profile-img">
-              <img
-                src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_5_1473333966-24x24.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className="views">
-              <p>Joana Bergstein</p>
-            </div>
-          </div>
-        </div>
+        {" "}
+        <CardBg info={bgCard[1]} />
       </div>
-      <div className="card-5"></div>
+      <div className="card-5">
+        {" "}
+        <CardBg info={bgCard[1]} />
+      </div>
       <div className="title-2">
         <h1>This week’s hottest</h1>
       </div>
-      <div className="card-6 big">
-        <div className="img-wrap-card">
-          <img
-            src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/gridlock_13-335x300.jpg"
-            alt=""
-          />
-        </div>
-        <div className="card-content">
-          <div className="card-upper">
-            <CameraOutlined />
-            <button className="btn food-drinks">food & drinks</button>
-          </div>
-
-          <h2 className="card-title">
-            <a href="">With good typography you don’t actually need images</a>
-          </h2>
-
-          <p>
-            Distinctively coordinate pandemic technologies rather than
-            market-driven meta-services. Distinctively reconceptualize high
-            standards in...
-          </p>
-
-          <div className="card-lower">
-            <div className="profile-img">
-              <img
-                src="https://mksdmcdn-9b59.kxcdn.com/gridlove/wp-content/uploads/2016/09/avatar_user_5_1473333966-24x24.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className="views">
-              {" "}
-              <p>Joana Bergstein</p>
-              <EyeOutlined />
-              <span>12,964 views</span>
-            </div>
-          </div>
-        </div>
+      <div className="card-6">
+        <CardBig info={bigCard[1]} />
       </div>
-      <div className="card-7"></div>
-      <div className="card-8">
+      <div className="card-7">
         {" "}
-        <h3 className="a8">a</h3>
-        <h3 className="b8">b</h3>
+        <CardBg info={bgCard[1]} />
       </div>
-      <div className="card-9">a</div>
+      <div className="card-8">
+        <CardBig info={bigCard[1]} />
+      </div>
+      <div className="card-9">
+        <CardBg info={bgCard[1]} />
+      </div>
       <div className="card-10">
-        <h3 className="a10">a</h3>
-        <h3 className="b10">b</h3>
+        <CardBg info={bgCard[0]} />
       </div>
       <div className="title-3">
         <h1>Latest articles</h1>

@@ -1,0 +1,81 @@
+@import "./preset.less";
+
+.card-big {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+}
+.img-wrap-card {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    filter: brightness(50%);
+  }
+}
+.card-content {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  p {
+    color: @primary-txt;
+    line-height: 25px;
+    font-family: @cabin;
+    margin: 0;
+  }
+}
+.card-title {
+  h1 {
+    margin: 0;
+  }
+  a {
+    color: @color-title-primary;
+    text-decoration: none;
+    font-family: @lato;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: @colored-title;
+    }
+  }
+}
+.card-lower {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: @comment-txt;
+  width: 100%;
+  gap: 2vh;
+  p,
+  span {
+    font-size: 12px;
+  }
+}
+.views {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile-img {
+  width: 2rem;
+  height: 2rem;
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+}
+.card-upper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 3%;
+}
