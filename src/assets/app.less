@@ -1,13 +1,15 @@
 @import "./preset.less";
 
-body {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
+
 .container {
   .df-jcc-aic;
   flex-direction: column;
+  width: 100%;
 }
 .btn {
   padding: 7px 11px 6px;
@@ -15,6 +17,7 @@ body {
   border: none;
   font-size: 10px;
   font-family: @cabin;
+  text-transform: uppercase;
   &:hover {
     background-color: @bg-color;
     color: @color-title-primary;

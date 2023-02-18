@@ -2,11 +2,13 @@ import "../_dist/carousel.css";
 import { Carousel } from "antd";
 import { LeftOutlined } from "@ant-design/icons/lib/icons";
 import { RightOutlined } from "@ant-design/icons/lib/icons";
+import { useRef } from "react";
 
 function CarouselAntd() {
+  const ref = useRef() as any;
   return (
     <div className="carousel-container">
-      <Carousel autoplay>
+      <Carousel ref={ref} autoplay dots={false}>
         <div className="caro-item">
           <div className="img-wrap">
             <img
@@ -63,9 +65,9 @@ function CarouselAntd() {
         </div>
       </Carousel>
       <div className="action-caro">
-        <LeftOutlined />
+        <LeftOutlined onClick={() => ref.current.prev()} />
 
-        <RightOutlined />
+        <RightOutlined onClick={() => ref.current.next()} />
       </div>
     </div>
   );
