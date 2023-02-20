@@ -4,9 +4,11 @@ import {
   EyeOutlined,
   PlayCircleFilled,
 } from "@ant-design/icons";
+import { useState } from "react";
 import "../_dist/main.css";
 import CardBg from "./cards/CardBg";
 import CardBig from "./cards/CardBig";
+import CardHalfBg from "./cards/CardHalfBg";
 
 function Main() {
   const bigCard = [
@@ -101,48 +103,31 @@ function Main() {
     },
   ];
 
+  const [show, setShow] = useState<boolean>(false);
   return (
     <div className="main-content">
       <div className="title-1">
         <h1>Editor’s pick</h1>
       </div>
-      <div className="card-1">
-        <CardBig info={bigCard[0]} />
+      <div className={!show ? "card-1" : "card-1-clicked"}>
+        <CardBig bigCard={bigCard[0]} setShow={setShow} show={show} />
       </div>
-      <div className="card-2">
-        <CardBg info={bgCard[0]} />
+      <div className={!show ? "card-2" : "card-2-clicked"}>
+        <CardBg bgCard={bgCard[0]} />
       </div>
-      <div className="card-3">
-        {" "}
-        <CardBg info={bgCard[1]} />
-      </div>
-      <div className="card-4">
-        {" "}
-        <CardBg info={bgCard[1]} />
-      </div>
-      <div className="card-5">
-        {" "}
-        <CardBg info={bgCard[1]} />
-      </div>
+      <div className="card-3"> </div>
+      <div className="card-4"> </div>
+      <div className="card-5"> </div>
       <div className="title-2">
         <h1>This week’s hottest</h1>
       </div>
-      <div className="card-6">
-        <CardBig info={bigCard[1]} />
-      </div>
-      <div className="card-7">
-        {" "}
-        <CardBg info={bgCard[1]} />
-      </div>
-      <div className="card-8">
-        <CardBig info={bigCard[1]} />
-      </div>
+      <div className="card-6"></div>
+      <div className="card-7"> </div>
+      <div className="card-8"></div>
       <div className="card-9">
-        <CardBg info={bgCard[1]} />
+        <CardHalfBg />
       </div>
-      <div className="card-10">
-        <CardBg info={bgCard[0]} />
-      </div>
+      <div className="card-10"></div>
       <div className="title-3">
         <h1>Latest articles</h1>
       </div>

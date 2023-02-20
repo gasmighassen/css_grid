@@ -1,8 +1,10 @@
 import React from 'react'
 
-function CardHalfBg() {
+const CardHalfBg = ({}) => {
   return (
-    <div>CardHalfBg</div>
+    <div>
+      <h1></h1>
+    </div>
   )
 }
 
