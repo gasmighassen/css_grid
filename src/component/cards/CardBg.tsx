@@ -1,29 +1,39 @@
-import React from "react";
+import { FC } from "react";
 import "../../_dist/cardBg.css";
-function CardBg(info: any) {
-  const data = info.info;
+
+interface props {
+  bgCard?: {
+    bgImg: string;
+    buttonType: string;
+    header: string;
+    userImg: string;
+    userName: string;
+  };
+}
+
+const CardBg: FC<props> = ({ bgCard }) => {
   return (
     <div className="cardBg">
       <div className="cardBg-content">
-        <img src={data.bgImg} alt="" className="card-bgimage" />
+        <img src={bgCard?.bgImg} alt="" className="card-bgimage" />
         <div className="cardbg-upper">
-          <button className={`${data.buttonType}` + " btn"}>
-            {data.buttonType}
+          <button className={`${bgCard?.buttonType}` + " btn"}>
+            {bgCard?.buttonType}
           </button>
-          <h1>{data.header}</h1>
+          <h1>{bgCard?.header}</h1>
         </div>
         <div className="card-lower">
           <div className="profile-img">
-            <img src={data.userImg} alt="" />
+            <img src={bgCard?.userImg} alt="" />
           </div>
 
           <div className="views">
-            <p>{data.userName}</p>
+            <p>{bgCard?.userName}</p>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default CardBg;
